@@ -197,3 +197,15 @@ sudo umount /mnt/rpi-sysroot
 ## Install image and start cross developing!
 
 Install `2024-07-04-raspios-bookworm-arm64-lite.img` as usual and use `/mnt/rpi-sysroot` as sysroot for cross development
+
+## Compress image for small image size if desired.
+
+```
+xz 2024-07-04-raspios-bookworm-arm64-lite.img
+```
+
+Use `-k` to keep uncompressed .img file
+
+```
+xz -k 2024-07-04-raspios-bookworm-arm64-lite.img
+```
