@@ -181,7 +181,13 @@ And create folders as necessary, for example:
 mkdir /usr/local/qt6
 ```
 
-**NOTE**: if error 'no space left on device' occurs, you need to make image even bigger with truncate command.
+**NOTE**: if error `no space left on device` occurs, you need to make image even bigger with truncate command.
+
+**NOTE**: if error `Could not resolve host: github.com` occurs, or if you cannot ping google.com, copy resolv.conf
+
+```
+sudo cp /etc/resolv.conf /mnt/rpi-sysroot/etc/resolv.conf
+```
 
 ## Exit chroot and umount all sysroot
 
