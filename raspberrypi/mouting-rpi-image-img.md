@@ -55,6 +55,12 @@ Number  Start   End     Size    Type     File system  Flags
 (parted) quit
 ```
 
+Or use parted in non interactive mode:
+
+```
+sudo parted -s 2024-07-04-raspios-bookworm-arm64-lite-custom.img resizepart 2 100%
+```
+
 ## Verify image Start value from second partition rootfs.
 
 ```
